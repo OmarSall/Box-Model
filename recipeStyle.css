@@ -113,6 +113,10 @@ body {
     width: 100%;
     padding: 20px;
   }
+
+  .top-section {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -125,6 +129,10 @@ body {
   .ingredients {
     width: 100%;
     padding: 15px;
+  }
+
+  .top-section {
+    gap: 10px;
   }
 
   h1,
@@ -142,5 +150,39 @@ body {
   .recipe-instructions {
     position: relative;
     bottom: -100px;
+  }
+}
+
+@media (min-height: 810px) and (min-width: 1040px) {
+  .recipe-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-section {
+    display: flex;
+  }
+
+  .recipe-description,
+  .recipe-instructions,
+  .ingredients {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ingredients {
+    height: 100%;
+  }
+  .recipe-description {
+    height: 60%;
+  }
+}
+
+@media (max-height: 1050px) {
+  .recipe-instructions {
+    position: static;
+    margin-top: 20px;
   }
 }
